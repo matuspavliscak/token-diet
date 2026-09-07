@@ -107,11 +107,14 @@ worth being precise about is the payoff:
   session, and 10x less than the naive framing implies.
 - **Delegating forfeits the parent's cache for that content.** A subagent
   starts on a fresh, uncached prefix.
-- **On Team/Enterprise seats, a cheaper model does not stretch the seat
-  allowance.** The rolling 5-hour and weekly windows are shared across models,
-  so switching models cannot restore access to them. Per-model-family limits
-  ("you've hit your Opus limit") are a separate ceiling, and there a cheap
-  worker does help.
+- **Whether a cheaper model saves anything depends on how your plan meters.**
+  Check `seatTier` before assuming. On a
+  [seat-based Team/Enterprise plan](https://support.claude.com/en/articles/11845131-use-claude-code-with-your-team-or-enterprise-plan),
+  the rolling 5-hour and weekly windows are shared across models, so a cheaper
+  worker does not stretch them; only the per-model-family ceilings ("you've hit
+  your Opus limit") respond to model choice. On a **usage-based** Enterprise
+  plan there are no per-seat limits and usage is billed at API rates, so model
+  choice moves cost directly and proportionally.
 - **The right metric is cost per completed task**, not tokens. A cheap worker
   that misses something and forces the expensive model to redo the work is not
   cheaper.
