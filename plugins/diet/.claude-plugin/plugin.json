@@ -1,0 +1,11 @@
+{
+  "name": "diet",
+  "version": "1.0.0",
+  "description": "Two-model routing for Claude Code: a Haiku bulk-reader for large-file reads, a Haiku code-writer for repetitive code from a reference file, and a PreToolUse hook that refuses shell commands that would dump an unfiltered payload into the session.",
+  "author": {
+    "name": "Matus Pavliscak"
+  },
+  "homepage": "https://github.com/matuspavliscak/token-diet",
+  "repository": "https://github.com/matuspavliscak/token-diet",
+  "license": "MIT"
+}

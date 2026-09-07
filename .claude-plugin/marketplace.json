@@ -1,0 +1,16 @@
+{
+  "name": "token-diet",
+  "owner": {
+    "name": "Matus Pavliscak"
+  },
+  "metadata": {
+    "description": "Two-model routing for Claude Code: cheap subagents do the bulk reads and repetitive writes, a hook keeps unfiltered command output out of the session."
+  },
+  "plugins": [
+    {
+      "name": "diet",
+      "source": "./plugins/diet",
+      "description": "bulk-reader and code-writer Haiku subagents plus a PreToolUse hook that refuses unfiltered command output."
+    }
+  ]
+}
