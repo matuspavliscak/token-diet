@@ -1,5 +1,5 @@
 {
-  "description": "Refuses shell commands that would dump an unfiltered payload into the session: az without a query, Databricks get/list without a filter, raw ADO/Databricks REST, and pytest's default report. Append #full to any command to bypass.",
+  "description": "Keeps unfiltered command payloads out of the session. Rewrites in place where the fix is mechanical (pytest gains -q --tb=short, no retry); denies with the fix in the message where narrowing needs a decision the hook cannot make (az without --query, Databricks get/list without a filter, raw REST without jq). Append #full to any command to bypass.",
   "hooks": {
     "PreToolUse": [
       {

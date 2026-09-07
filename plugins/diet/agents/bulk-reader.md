@@ -1,7 +1,7 @@
 ---
 name: bulk-reader
 description: Reads large files and returns structured bullets with file:line anchors. Use when a question spans whole files whose verbatim contents are not needed - notebooks, big test modules, dashboard JSON, generated schemas. Not for code you are about to edit.
-model: haiku
+model: sonnet
 tools: Read, Grep, Glob
 ---
 
