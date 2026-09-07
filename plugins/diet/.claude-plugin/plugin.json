@@ -1,7 +1,7 @@
 {
   "name": "diet",
-  "version": "1.0.0",
-  "description": "Two-model routing for Claude Code: a Haiku bulk-reader for large-file reads, a Haiku code-writer for repetitive code from a reference file, and a PreToolUse hook that refuses shell commands that would dump an unfiltered payload into the session.",
+  "version": "1.1.0",
+  "description": "Route the mechanical parts of a session to cheaper models: a bulk-reader for large-file reads (Sonnet, per the measurements in the README), a Haiku code-writer for mirror-pattern code from a required reference file, and a PreToolUse hook that keeps unfiltered command payloads out of the session - rewriting the command in place where the fix is mechanical, and denying with the fix in the message only where narrowing needs a decision it cannot make.",
   "author": {
     "name": "Matus Pavliscak"
   },

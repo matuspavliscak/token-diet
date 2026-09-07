@@ -10,7 +10,7 @@
     {
       "name": "diet",
       "source": "./plugins/diet",
-      "description": "bulk-reader and code-writer Haiku subagents plus a PreToolUse hook that refuses unfiltered command output."
+      "description": "bulk-reader (Sonnet) and code-writer (Haiku) subagents plus a PreToolUse hook that rewrites commands to bound their output, and denies only where the narrowing needs a judgement call."
     }
   ]
 }
